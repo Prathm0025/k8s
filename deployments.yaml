@@ -18,27 +18,4 @@ spec:
         image: nginx
         # image: serv1:v1
         ports:
-        - containerPort: 3001
-
----
-
-apiVersion: apps/v1
-kind: Deployment
-metadata:
-  name: backend-service-2
-spec:
-  replicas: 2
-  selector:
-    matchLabels:
-      app: backend-service-2
-  template:
-    metadata:
-      labels:
-        app: backend-service-2
-    spec:
-      containers:
-      - name: backend-service-2
-        image: nginx
-        # image: serv2:v1
-        ports:
-        - containerPort: 3002
+        - containerPort: 80
