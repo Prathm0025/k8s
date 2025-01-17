@@ -27,7 +27,7 @@ echo 'deb [signed-by=/etc/apt/keyrings/kubernetes-apt-keyring.gpg] https://pkgs.
 sudo apt update
 
 # Install kubeadm, kubelet, and kubectl
-sudo apt install -y kubeadm-1.30.0-1.1 kubelet-1.30.0-1.1 kubectl-1.30.0-1.1
+sudo apt install -y kubeadm kubelet kubectl
 
 # Enable and start Docker service
 sudo systemctl enable docker
